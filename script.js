@@ -131,7 +131,7 @@ const secData = data[0];
 document.querySelector('.popup .actbtn-live').onclick = () => {
   window.location.href = secData.live_version;
 };
-document.querySelector('.popup .actbtn-source').onclick = () => {
+document.querySelector(' .actbtn-source').onclick = () => {
   window.location.href = secData.source_code;
 };
 
@@ -171,7 +171,7 @@ closePopupButtons.forEach((button) => {
   button.addEventListener('click', () => {
     section.classList.add('invisible');
     document.body.classList.remove('fixed');
-    const popup = button.closest('.popup');
+    const popup = button.closest('');
     closePopup(popup);
   });
 });
