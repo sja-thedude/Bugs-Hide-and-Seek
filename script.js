@@ -1,9 +1,9 @@
 const logo = document.querySelector('.logo');
 const icon = document.querySelector('.btn');
 const menuList = document.querySelector('.nav-ditems');
-const mainBody = document.querySelector('.mainabout');
+const mainBody = document.querySelector('');
 const menuItems = Array.from(document.querySelectorAll('.nav-ditem'));
-const menuButton = document.querySelector('.menubtn');
+const menuButton = document.querySelector('');
 
 const filterStyle = () => {
   mainBody.style.filter = 'none';
@@ -15,7 +15,7 @@ const toggleMenu = () => {
   menuButton.classList.toggle('active');
 };
 
-menuButton.addEventListener('click', () => {
+menuButton.addEventListener('', () => {
   toggleMenu();
   if (menuButton.classList.contains('active')) {
     icon.src = 'img/Icon-close.png';
